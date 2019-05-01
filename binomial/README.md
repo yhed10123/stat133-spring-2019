@@ -1,7 +1,7 @@
 
 ## Binomial Distribution
 
-The package `"bmjhd"` is a minimal implementation for calculating probabilities of a Binomial random variable, and related calculations such as the probability distribution, the expected value, variance.
+The package `"binomial"` is a minimal implementation for calculating probabilities of a Binomial random variable, and related calculations such as the probability distribution, the expected value, variance.
 
 ## Function bin_choose()
 
