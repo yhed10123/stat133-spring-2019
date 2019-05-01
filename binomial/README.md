@@ -1,87 +1,106 @@
 
-Overview
---------
+## Binomial Distribution
 
-\`"binomial" is an R package that provides basic tools for simulating and analyzing binomial random variables.
+The package `"bmjhd"` is a minimal implementation for calculating probabilities of a Binomial random variable, and related calculations such as the probability distribution, the expected value, variance.
 
-Important package members include:
+## Function bin_choose()
 
--   `bin_variable()` constructs an object that represents a binomial random variable.
--   `bin_probability()` returns the probability that a binomial random variable with the specified shape parameters take on a particular value.
--   `bin_distribution()` returns the probability mass function of a binomal random variable with the specified shape parameters
--   `bin_cumulative()` returns the cumulative distribution function of a binomal random variable with the specified shape parameters
--   `summary()` method of `binvar` objects
--   `plot()` method of `bindis` and `cumdis` objects
-
-Motivation
-----------
-
-The purpose of the `"binomial"` package is to provide minimal tools for simulating and analyzing binomial random variables.
-
-Installation
-------------
-
-Install the `"binomial"` package from GitHub with the following commands:
-
-``` r
-install.packages("devtools") 
-devtools::install_github("stat133-spring-2019/binomial")
+Function bin_choose() that calculates the number of combinations in which k successes can occur in n trials.
+```{r}
+bin_choose(n = 5, k = 2)
+bin_choose(5, 0)
+bin_choose(5, 1:3)
 ```
 
-Usage
------
+---
 
-``` r
-library(binomial)
+## Function bin_probability()
 
-bernoulli <- bin_variable(1, 0.5)
-bernoulli
-#> "Binomial Variable" 
-#> 
-#> Parameters 
-#> - number of trials: 1 
-#> - prob of success : 0.5
-#> "Binomial Variable" 
-#>
-#> Parameters 
-#> - number of trials: 1 
-#> - prob of success : 0.5
+Function bin_probability() that calculates the probability of getting k successes in n trials with specific probability of success.
 
-bin_distribution(bernoulli$trials, bernoulli$prob)
-#>   success probability
-#> 1       0         0.5
-#> 2       1         0.5
-#>   success probability
-#> 1       0         0.5
-#> 2       1         0.5
+```{r}
+# probability of getting 2 successes in 5 trials
+# (assuming prob of success = 0.5)
+bin_probability(success = 2, trials = 5, prob = 0.5)
+# probabilities of getting 2 or less successes in 5 trials
+# (assuming prob of success = 0.5)
+bin_probability(success = 0:2, trials = 5, prob = 0.5)
+# 55 heads in 100 tosses of a loaded coin with 45% chance of heads
+bin_probability(success = 55, trials = 100, prob = 0.45)
+```
 
-bin_probability(1, bernoulli$trials, bernoulli$prob)
-#> [1] 0.5
-#> [1] 0.5
+---
 
-summary(bernoulli)
-#> "Binomial Variable" 
-#> 
-#> Parameters 
-#> - number of trials: 1 
-#> - prob of success : 0.5 
-#> 
-#> Measures 
-#> - mean    : 0.5 
-#> - variance: 0.25 
-#> - mode    : 0 
-#> - skewness: 0 
-#> - kurtosis: -2
-#> "Binomial Variable" 
-#>
-#> Parameters 
-#> - number of trials: 1 
-#> - prob of success : 0.5 
-#>
-#> Measures 
-#> - mean    : 0.5 
-#> - variance: 0.25 
-#> - mode    : 0 
-#> - skewness: 0 
-#> - kurtosis: -2
+## Function bin_distribution()
+
+Function bin_distribution() that returns a data frame with the probability distribution: sucesses in the first column, probability in the second column.
+
+```{r}
+# binomial probability distribution
+bin_distribution(trials = 5, prob = 0.5)
+```
+
+### Function plot.bindis()
+plot.bindis() that graphs a barplot to display the probability histogram of a binomial distribution object "bindis".
+
+```{r}
+# plotting binomial probability distribution
+dis1 <- bin_distribution(trials = 5, prob = 0.5)
+plot(dis1)
+```
+
+---
+
+## Function bin_cumulative()
+
+Function bin_cumulative() that returns a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column.
+
+```{r}
+# binomial cumulative distribution
+bin_cumulative(trials = 5, prob = 0.5)
+```
+
+### Function plot.bincum()
+plot.bincum() that graphs the cumulative distribution in ab object "bincum".
+
+```{r}
+# plotting binomial cumulative distribution
+dis2 <- bin_cumulative(trials = 5, prob = 0.5)
+plot(dis2)
+```
+
+---
+
+
+## Function bin_variable()
+
+Function bin_variable() returns an object of class "binvar", that is, a binomial random variable object.
+
+### Method print.binvar()
+
+Method function print.binvar() to be able to nicely print the content of an object "binvar".
+
+```{r}
+bin1 <- bin_variable(trials = 10, p = 0.3)
+bin1
+```
+
+
+### Methods summary.binvar() and print.summary.binvar()
+
+Methods summary.binvar() returns a list of class "summary.binvar" containing named elements:
+
+* – trials: number of trials
+* – prob: probability of success
+* – mean: mean or expected value
+* – variance: variance
+* – mode: mode
+* – skewness: skewness
+* – kurtosis: kurtosis
+
+Methods print.summary.binvar() to nicely print the contents of an object "summary.binvar".
+
+```{r}
+binsum1 <- summary(bin1)
+binsum1
 ```
