@@ -100,7 +100,7 @@ dis1 <- bin_distribution(trials = 5, prob = 0.5)
 plot(dis1)
 ```
 
-![](README_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](unnamed-chunk-4-1.png)<!-- -->
 
 ---
 
@@ -134,7 +134,7 @@ dis2 <- bin_cumulative(trials = 5, prob = 0.5)
 plot(dis2)
 ```
 
-![](README_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](unnamed-chunk-6-1.png)<!-- -->
 
 ---
 
