@@ -22,7 +22,7 @@ You can install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("stat133-sp19/hw-stat133-yangluanne")
+devtools::install_github("stat133-spring-2019/binomial")
 ```
 
 Example
