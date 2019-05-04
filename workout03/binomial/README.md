@@ -25,9 +25,11 @@ Install the development version from GitHub via the package `"devtools"`:
 # development version from GitHub:
 # install.packages("devtools") 
 # install "binomial" (without vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-AliceQiuhy/binomial")
+devtools::install_github("stat133-spring-2019
+/workout03/binomial")
 # install "binomial" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-AliceQiuhy/binomial", build_vignettes = TRUE)
+devtools::install_github("stat133-spring-2019
+/workout03/binomial", build_vignettes = TRUE)
 ```
 
 ## Usage
