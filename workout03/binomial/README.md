@@ -18,7 +18,6 @@ provides functions to simulate tossing a coin.
 This package has been developed to illustrate some of the concepts behind the creation of an R package.
 
 ## Installation
-------------
 
 Install the development version from GitHub via the package `"devtools"`:
 
@@ -32,7 +31,7 @@ devtools::install_github("stat133-sp19/hw-stat133-AliceQiuhy/binomial", build_vi
 ```
 
 ## Usage
------
+
 
 ## Binomial Distribution
 
