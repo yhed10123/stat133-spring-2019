@@ -1,3 +1,38 @@
+## Overview
+
+`"binomial"` is a minimal [R](http://www.r-project.org/) package that
+provides functions to simulate tossing a coin.
+
+  - `bin_choose()` calculates the number of combinations.
+  - `bin_probability()` calculates the probability.
+  - `bin_distribution()` a data frame with the `bin_probability()`.
+  - `plot.bindis()` a graphs a barplot to display the probability histogram of a `bin_distribution()`.
+  - `bin_cumulative()`a data frame with both the `bin_probability()` and the cumulative probabilities.
+  - `plot.bincum()` a graphs the cumulative distribution in ab object "bincum".
+  - `bin_variable()` a binomial random variable object.
+  - `summary.binvar()`  a list of class `summary.binvar()` containing named elements.
+  - `print.summary.binvar()` nicely print the contents of an object `summary.binvar()`.
+
+## Motivation
+
+This package has been developed to illustrate some of the concepts behind the creation of an R package.
+
+## Installation
+------------
+
+Install the development version from GitHub via the package `"devtools"`:
+
+``` r
+# development version from GitHub:
+# install.packages("devtools") 
+# install "binomial" (without vignettes)
+devtools::install_github("stat133-sp19/hw-stat133-AliceQiuhy/binomial")
+# install "binomial" (with vignettes)
+devtools::install_github("stat133-sp19/hw-stat133-AliceQiuhy/binomial", build_vignettes = TRUE)
+```
+
+## Usage
+-----
 
 ## Binomial Distribution
 
