@@ -1,12 +1,3 @@
----
-title: "Binomial Distribution"
-author: "Jeonghyeon Dang"
-date: "2019-05-03"
-output:
-  html_document:
-    keep_md: TRUE
----
-
 
 ## Binomial Distribution
 
