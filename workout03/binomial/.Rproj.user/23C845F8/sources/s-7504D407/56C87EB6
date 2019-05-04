@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556736504336.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1908076863",
+    "id" : "56C87EB6",
+    "lastKnownWriteTime" : 1556735365,
+    "last_content_update" : 1556735365,
+    "path" : "~/Desktop/Stat133/binomial/.gitignore",
+    "project_path" : ".gitignore",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "gitignore"
+}

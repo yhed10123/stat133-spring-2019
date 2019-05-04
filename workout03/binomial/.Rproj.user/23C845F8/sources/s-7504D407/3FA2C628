@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556942407079.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1341724369",
+    "id" : "3FA2C628",
+    "lastKnownWriteTime" : 1556526174,
+    "last_content_update" : 1556526174,
+    "path" : "~/Desktop/Stat133/binomial/tests/testthat/test_main_function.R",
+    "project_path" : "tests/testthat/test_main_function.R",
+    "properties" : {
+    },
+    "relative_order" : 17,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

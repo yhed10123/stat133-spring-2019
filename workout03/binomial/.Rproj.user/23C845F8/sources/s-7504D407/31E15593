@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556940607208.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3680690647",
+    "id" : "31E15593",
+    "lastKnownWriteTime" : 1556735365,
+    "last_content_update" : 1556735365,
+    "path" : "~/Desktop/Stat133/binomial/vignettes/.gitignore",
+    "project_path" : "vignettes/.gitignore",
+    "properties" : {
+    },
+    "relative_order" : 14,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "gitignore"
+}
