@@ -201,13 +201,13 @@ bin1
 
 Methods summary.binvar() returns a list of class "summary.binvar" containing named elements:
 
-* – trials: number of trials
-* – prob: probability of success
-* – mean: mean or expected value
-* – variance: variance
-* – mode: mode
-* – skewness: skewness
-* – kurtosis: kurtosis
+* trials: number of trials
+* prob: probability of success
+* mean: mean or expected value
+* variance: variance
+* mode: mode
+* skewness: skewness
+* kurtosis: kurtosis
 
 Methods print.summary.binvar() to nicely print the contents of an object "summary.binvar".
 
